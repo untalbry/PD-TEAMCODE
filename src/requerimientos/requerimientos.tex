@@ -1,0 +1,59 @@
+\section{Requeriimientos de la primer etapa }
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}p{7cm}|}
+    \hline
+    \textbf{ID} & \textbf{Requerimiento} & \textbf{Descripción} \\
+    \hline
+    \endfirsthead
+    \hline
+    \textbf{ID} & \textbf{Requerimiento} & \textbf{Descripción} \\
+    \hline
+    \endhead
+    \hline
+    \endfoot
+    \hline
+    \endlastfoot
+    REQ-TC-01 & Crear cuenta & Un usuario nuevo podrá crear un perfil nuevo. \\
+    \hline
+    REQ-TC-02 & Iniciar sesión & Un usuario que ya está en la plataforma podrá ingresar con sus credenciales. \\
+    \hline
+    REQ-TC-03 & Consultar datos personales del usuario & Un usuario puede consultar sus datos personales, tales como su nombre de usuario, correo electrónico, foto de perfil, etc. \\
+    \hline
+    REQ-TC-04 & Editar datos de usuario & Un usuario puede cambiar sus datos personales, tales como nombre del usuario, correo electrónico, foto de perfil, etc. \\
+    \hline
+    REQ-TC-05 & Eliminar cuenta & Un usuario podrá eliminar su cuenta, con la advertencia de que al hacerlo se borrarán permanentemente todos sus datos y progreso del sistema. \\
+    \hline
+    REQ-TC-06 & Crear un grupo & Permite a los usuarios crear grupos donde se publicarán diariamente ejercicios de LeetCode. \\
+    \hline
+    REQ-TC-07 & Invitar al grupo & Una vez creado un grupo, los usuarios podrán invitar a otros mediante un enlace de invitación. \\
+    \hline
+    REQ-TC-08 & Unirse al grupo & Un usuario se puede unir a un grupo a través de un enlace de invitación otorgado por otro usuario. \\
+    \hline
+    REQ-TC-09 & Obtención de LeetCode por ELO & Un agente obtendrá automáticamente al inicio del día un ejercicio algorítmico diario de acuerdo al ELO calculado del grupo. \\
+    \hline
+    REQ-TC-10 & Publicar un reto de LeetCode & Publicar diariamente un ejercicio de LeetCode en la plataforma, incluyendo los siguientes atributos: id, nombre, dificultad, descripción, link, fecha de obtención. \\
+    \hline
+    REQ-TC-11 & Marcar como “logrado” el ejercicio & Cada usuario deberá marcar en el reto publicado en un grupo que logró completar el ejercicio. \\
+    \hline
+    REQ-TC-12 & Marcar como “no logrado” el ejercicio & Cada usuario deberá marcar el reto publicado en un grupo que no logró completar el ejercicio. \\
+    \hline
+    REQ-TC-13 & Actualizar ELO de un usuario & Al marcar un ejercicio ya sea como “logrado” o “no logrado” se deberá actualizar el ELO del usuario incrementando su puntaje o disminuyéndolo. \\
+    \hline
+    REQ-TC-14 & Actualizar ELO del grupo & Cuando todos los miembros de un grupo completen un ejercicio, o al final del día, se deberá actualizar el ELO del grupo en función de sus respuestas. \\
+    \hline
+    REQ-TC-15 & Consultar desempeño por problema & El sistema debe permitir consultar el desempeño de los usuarios en un problema específico de LeetCode. \\
+    \hline
+    REQ-TC-16 & Consultar retos de LeetCode por semana & Consultar una lista de ejercicios de LeetCode publicados durante la última semana. \\
+    \hline
+    REQ-TC-17 & Consultar reto de LeetCode por número de día & Consultar un ejercicio de LeetCode específico, seleccionándolo por el número de día correspondiente. \\
+    \hline
+    REQ-TC-18 & Consultar desempeño del grupo & Consultar el desempeño general de los usuarios en los problemas resueltos. \\
+    \hline
+    REQ-TC-19 & Eliminar un usuario del grupo & El administrador del grupo puede eliminar a un usuario específico. \\
+    \hline
+    REQ-TC-20 & Eliminar usuario por inactividad & Eliminar un usuario después de no iniciar sesión en un periodo de 30 días continuos. Esto para evitar la descompensación del ELO por usuarios inactivos en un grupo. \\
+    \hline
+    REQ-TC-21 & Asignar rol de administrador a un usuario & Un administrador de grupo puede otorgar el rol de administrador a otro usuario. \\
+    \hline
+    REQ-TC-22 & Salir de un grupo de LeetCode & Abandonar un grupo de LeetCode al que se hayan unido. \\
+\end{longtable}

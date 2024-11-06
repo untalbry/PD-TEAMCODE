@@ -1,0 +1,64 @@
+\documentclass[10pt, oneside, openany]{book} 
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{titling}
+\usepackage{titlesec} 
+\usepackage{helvet}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\renewcommand{\familydefault}{\sfdefault} 
+% Ajustes de márgenes
+\usepackage[a4paper, margin=1in]{geometry} 
+
+% Ajustes de espacio entre elementos
+\setlength{\abovecaptionskip}{10pt}
+\setlength{\belowcaptionskip}{10pt}
+\setlength{\textfloatsep}{10pt}
+
+\begin{document}
+
+\title{\textbf{\huge Sistema de control de seguimiento de ejercicios algoritmicos \\[0.5em] \LARGE 1-PDS \\ \Large Propuesta de desarrollo de software}}
+\author{Bryan Castro Sánchez}
+\date{\today}
+
+    \maketitle
+    \vspace{-1em} 
+    \begin{center}
+        \fbox{\textbf{TEAMCODE--Etapa 1-PDS \ Versión 1.0.0}}
+    \end{center}
+
+    \begin{center}
+        \textcolor{blue}{\textbf{Binary Brains}} \\[0.3em]
+        \textit{Club de desarrollo de software y algoritmia} \\[2em]
+        \date{\today}
+    \end{center}
+
+    \newpage
+    % ----------------------------  Resumen ejecutivo ---------------------------- %
+    \chapter{Resumen ejecutivo}
+    \label{ch:resumen}
+    \input{resumen/resumen.tex}
+    % ----------------------------  Contexto ---------------------------- %
+    \chapter{Antecedentes y contexto}
+    \label{ch:contexto}
+    \input{contexto/contexto.tex}
+    % ----------------------------  Objetivos ---------------------------- %
+    \chapter{Objetivos}
+    \label{ch:objetivos}
+    \input{objetivos/objetivos.tex}
+    % ---------------------------- Alcance del proyecto ---------------------------- %
+    \chapter{Alcance del Proyecto}
+    \label{ch:Alcance}
+    \input{alcance/alcance.tex}
+    % ---------------------------- Solución ---------------------------- %
+    \chapter{Solucion}
+    \label{ch:solución}
+    \input{solucion/solucion.tex}
+    % ---------------------------- Requerimientos ---------------------------- %
+    \chapter{Requerimientos del sistema}
+    \label{ch:requerimientos}
+    \input{requerimientos/requerimientos.tex}
+\end{document}
